@@ -16,8 +16,11 @@ extra-source-files:  README.adoc
 cabal-version:       >=1.10
 
 library
-  --exposed-modules:     
-  build-depends:       base == 4.*
+  exposed-modules:     Data.Format.Stl
+  other-modules:       Data.Format.Stl.TextParser
+                       Data.Format.Stl.BinaryParser
+  build-depends:       base == 4.*,
+                       attoparsec == 0.10.*
   hs-source-dirs:      src
   default-language:    Haskell2010
 
