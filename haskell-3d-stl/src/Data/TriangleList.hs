@@ -1,4 +1,8 @@
 {-# LANGUAGE BangPatterns #-}
+{- |
+This module contains some basic data structures which can
+desrcibe a single 3D mesh.
+-}
 module Data.TriangleList
        (
          -- * Data format
