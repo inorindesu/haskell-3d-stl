@@ -6,7 +6,7 @@ desrcibe a single 3D mesh.
 module Data.TriangleList
        (
          -- * Data format
-         Vector (..),
+         Vector3D (..),
          Triangle (..),
          Normal (..),
          Mesh (..)
