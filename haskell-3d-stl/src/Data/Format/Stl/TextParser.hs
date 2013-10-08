@@ -18,14 +18,14 @@ pSolid :: Parser Mesh
 pSolid = do
   name <- pOptSpaces *> string "solid" *> pSpaces *> manyTill anyChar endOfLine
   faces <- many pFacet
-  pOptSpaces *> string "endsolid" *> string (T.pack name)
+  pOptSpaces *> string "endsolid" *> pSpaces *> string (T.pack name) *> endOfLine
   return $ fromList faces
 
 pFacet :: Parser Triangle
 pFacet = do
   normal <- pOptSpaces *> string "facet" *> pSpaces *> string "normal" *> pSpaces *> pPoint <* endOfLine
-  pOptSpaces *> string "endfacet" *> endOfLine
   [v1, v2, v3] <- pLoop
+  pOptSpaces *> string "endfacet" *> endOfLine  
   return $ Triangle v1 v2 v3 normal
 
 pLoop :: Parser [Vector3D]
