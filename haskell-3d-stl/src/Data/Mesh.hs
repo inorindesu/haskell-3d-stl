@@ -3,7 +3,7 @@
 This module contains some basic data structures which can
 desrcibe a single 3D mesh.
 -}
-module Data.TriangleList
+module Data.Mesh
        (
          -- * Data format
          Vector3D (..),

@@ -8,7 +8,7 @@ import Control.Applicative
 import Data.Text.Lazy as LT
 import Data.Text as T
 import Data.Attoparsec.Text.Lazy
-import Data.TriangleList
+import Data.Mesh
 import Data.Vector (fromList)
 
 pStl :: Parser Mesh

@@ -1,5 +1,5 @@
 import Data.Format.Stl
-import Data.TriangleList
+import Data.Mesh
 import qualified Data.Text.Lazy as LT
 import Test.QuickCheck
 

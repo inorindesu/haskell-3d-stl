@@ -17,7 +17,7 @@ cabal-version:       >=1.10
 
 library
   exposed-modules:     Data.Format.Stl
-                       Data.TriangleList
+                       Data.Mesh
   other-modules:       Data.Format.Stl.TextParser
                        Data.Format.Stl.BinaryParser
   build-depends:       base == 4.*,
@@ -30,7 +30,7 @@ library
 executable stl-parse-test
   main-is:             stl-parse-test.hs
   other-modules:       Data.Format.Stl.TextParser
-                       Data.TriangleList
+                       Data.Mesh
                        Data.Format.Stl
   build-depends:       base == 4.*,
                        attoparsec == 0.10.*,
